@@ -41,6 +41,10 @@ object AppModule {
             .addConverterFactory(GsonConverterFactory.create())
             .build()
 
+    /*
+    Because there are two APIs available (Weather and GeoLocation), then a named parameter is used
+    to differentiate between them. This named parameter is then used in the @Provides methods.
+    */
     @Provides
     @Singleton
     fun provideNewsApi2(@Named("location") retrofit: Retrofit): GeoCodingApi =

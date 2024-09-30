@@ -1,6 +1,5 @@
 package com.vl.victorlekweuwaweatherapplication.api
 
-import com.vl.victorlekweuwaweatherapplication.api.WeatherApi.Companion
 import com.vl.victorlekweuwaweatherapplication.api.models.locationModels.LocationResponse
 import retrofit2.http.GET
 import retrofit2.http.Query
